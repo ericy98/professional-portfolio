@@ -9,6 +9,7 @@
 /*color scheme mutted purple 
 #BFBAE0 --light purple
 #8288B8 --deep blue/purple
+#25253D -- really dark purple
 #91939E -- light gray
 #919CEB -- periwinkleish
 #44454A --darker gray
@@ -63,7 +64,21 @@ header nav ul li a {
 /*start hero style*/
 .hero {
     padding: 10rem 5%;
-    background-image: url("../assets/images/background-img.jpg");
+    background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url("../assets/images/background-img.jpg");
     background-size: cover;
+    height: 100px;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 } 
+
+.hero h2 {
+    font-style: italic;
+    font-size: 25px;
+    color: #25253D;
+}
+
+.hero h2 div {
+    padding: 10px 50px;
+}

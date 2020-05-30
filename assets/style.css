@@ -26,14 +26,14 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: sticky;
+  position: sticky;
         top: 0;
         z-index: 1;
        
         /* safari sticky */
         position: -webkit-sticky;
         position: sticky;
-        top: 0;
+        top: 0;  
 }
 
 header h1 {
@@ -62,7 +62,8 @@ header nav ul li a {
 
 /*start hero style*/
 .hero {
-    background-image: url("../assets/images/background-img+.jpg");
+    padding: 10rem 5%;
+    background-image: url("../assets/images/background-img.jpg");
     background-size: cover;
-    background-position: center 80%;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+} 

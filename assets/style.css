@@ -61,4 +61,8 @@ header nav ul li a {
 /* end header style */
 
 /*start hero style*/
-
+.hero {
+    background-image: url("../assets/images/background-img+.jpg");
+    background-size: cover;
+    background-position: center 80%;
+    background-attachment: fixed;

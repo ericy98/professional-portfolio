@@ -1,0 +1,68 @@
+/* possible colors analogous
+#BF9E97
+#AFA3C9
+#99B2AC
+#C9C9A3
+#BFA79B
+*/
+
+/*color scheme mutted purple 
+#BFBAE0 --light purple
+#8288B8 --deep blue/purple
+#91939E -- light gray
+#919CEB -- periwinkleish
+#44454A --darker gray
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* start header style */
+header {
+    background-color: #44454A;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+        top: 0;
+        z-index: 1;
+       
+        /* safari sticky */
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+}
+
+header h1 {
+   font-size: 40px;
+   background-color: #8288B8;
+   color: #44454A;
+   padding: 15px 15px;
+   margin: 20px 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 15px 15px;
+    font-weight: lighter;
+    color: #8288B8;
+    font-size: 1.75vw;
+
+}
+/* end header style */
+
+/*start hero style*/
+.hero {
+    background-image: url("../assets/images/background-img+.jpg");
+    background-size: cover;
+    background-position: center 80%;
+    background-attachment: fixed;

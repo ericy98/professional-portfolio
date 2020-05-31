@@ -162,10 +162,10 @@ header nav ul li a {
     font-size: 1.8rem;
 }
 
-.grid-item.surf {
+.grid-item.run {
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
-    background-image: url("../assets/images/surf.jpg");
+    background-image: url("../assets/images/run.JPG");
     background-size: cover;
     display:flex;
     flex-direction: column; 
@@ -188,8 +188,8 @@ header nav ul li a {
     background-size: cover;
 }
 
-.grid-item.run {
-    background-image: url("../assets/images/run.JPG");
+.grid-item.surf {
+    background-image: url("../assets/images/surf.jpg");
     background-size: cover;
 }
 
@@ -239,5 +239,5 @@ header nav ul li a {
 }
 
 .contact-info a:hover {
-    color: var(--light-gray);
+    background-color: var(--light-gray);
 }

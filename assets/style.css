@@ -292,3 +292,20 @@ header nav ul li a:hover {
     color: var(--dark-purple);
     padding: 10px;
 }
+/* end contact style */
+
+/* start mediaqueries style */
+@media screen and (max-width: 980px) {
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+@media screen and (max-width: 575px) {
+
+    
+}

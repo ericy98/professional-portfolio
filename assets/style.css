@@ -169,7 +169,29 @@ header nav ul li a {
 .grid-item.surf {
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
+    background-image: url("../assets/images/surf.jpg");
+    background-size: cover;
     display:flex;
     flex-direction: column; 
     justify-content: flex-end;
+}
+
+.grid-item.led {
+    background-image: url("../assets/images/led.jpg");
+    background-size: cover;
+}
+
+.grid-item.calc {
+    background-image: url("../assets/images/calculator.jpg");
+    background-size: cover;
+}
+
+.grid-item.pastel {
+    background-image: url("../assets/images/pastel.jpg");
+    background-size: cover;
+}
+
+.grid-item.run {
+    background-image: url("../assets/images/run.JPG");
+    background-size: cover;
 }

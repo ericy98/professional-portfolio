@@ -156,6 +156,7 @@ header nav ul li a {
     border: 2px solid black;
     background: var(--light-gray);
     padding: 30px;
+    position: relative;
 }
 
 .grid-item h3 {
@@ -167,30 +168,55 @@ header nav ul li a {
     grid-row: 1/ span 2;
     background-image: url("../assets/images/run.JPG");
     background-size: cover;
+    opacity: 40%;
     display:flex;
     flex-direction: column; 
     justify-content: flex-end; 
 }
 
+.grid-item.run:hover {
+    opacity: 1;
+}
+
 .grid-item.led {
-    background-image: url("../assets/images/led.jpg");
-    background-size: cover;
+   background-image: url("../assets/images/led.jpg");
+    background-size: contain;
+    opacity: 40%;
     
+}
+
+.grid-item.led:hover {
+    opacity: 1;
 }
 
 .grid-item.calc {
     background-image: url("../assets/images/calculator.jpg");
     background-size: cover;
+    opacity: 40%;
+}
+
+.grid-item.calc:hover{
+    opacity: 1;
 }
 
 .grid-item.pastel {
     background-image: url("../assets/images/pastel.jpg");
     background-size: cover;
+    opacity: 40%;
+}
+
+.grid-item.pastel:hover {
+    opacity: 1;
 }
 
 .grid-item.surf {
     background-image: url("../assets/images/surf.jpg");
     background-size: cover;
+    opacity: 40%;
+}
+
+.grid-item.surf:hover {
+    opacity:1;
 }
 
 .name {
@@ -198,6 +224,7 @@ header nav ul li a {
     opacity: 80%;
     width: 50%;
     height: 120px;
+    padding: 0 0 0 5px;
 }
 
 .name2 {
@@ -206,12 +233,15 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     line-height: 0vw;
+    padding: 0 5px 0 5px;
 }
 
 .grid-item a {
     text-decoration: none;
     color: black;
 }
+
+
 /* end grid style */
 
 /* start contact me style */
@@ -239,5 +269,6 @@ header nav ul li a {
 }
 
 .contact-info a:hover {
-    background-color: var(--light-gray);
+    background-color: var(--periwinkleish);
+    font-size: 20px;
 }

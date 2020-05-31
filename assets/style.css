@@ -220,6 +220,7 @@ header nav ul li a {
     display:flex;
     justify-content: space-evenly;
     align-items: center; 
+    text-decoration: none;
 }
 
 
@@ -227,7 +228,20 @@ header nav ul li a {
     margin-right: auto;
     padding: 0 20px;
 }    
+
 .contact-info a {
     margin-right: 8vw;
     margin-left: 8vw;
+    color: var(--dark-gray);
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #fff;
+}
+
+.contact-info a:hover {
+    color: var(--light-gray);
+}
+
+.resume {
+    background: var(--dark-gray);
 }

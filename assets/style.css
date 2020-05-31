@@ -15,6 +15,10 @@
     --dark-gray: #2F3033;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color:#fff;
@@ -295,17 +299,110 @@ header nav ul li a:hover {
 /* end contact style */
 
 /* start mediaqueries style */
+
+
 @media screen and (max-width: 980px) {
+    
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        margin: 10px 15px;
+        padding: 10px 15px;
+    }
+
+    .section-title-first {
+        font-size: 35px;
+        border-right: none;
+        border-bottom:3px solid #fff;
+        padding: 10px 25px;
+    }
+
+    .work h2{
+        font-size: 35px;
+        border-right: none;
+        border-bottom:3px solid #fff;
+        padding: 10px 25px;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about p {
+        text-align: center;
+    }
+
+    .work {
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative
+    }
+
+    .grid-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    font-size: 1.1rem;
+    }
 
 
-}
+    .contact-me {
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    /*
+    .contact-me h2 {
+        text-align: center;
+        justify-content: center;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    */
+
+    .contact-me h2 {
+        border-bottom: none;
+        border-right: 3px solid #fff;
+        margin-left: 30%;
+    }
+    }
+    .contact-info a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25vw;
+        line-height: 4vw;
+    } */
+} 
 
 @media screen and (max-width: 768px) {
-
 
 }
 
 @media screen and (max-width: 575px) {
 
-    
 }

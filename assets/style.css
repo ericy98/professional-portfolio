@@ -241,7 +241,3 @@ header nav ul li a {
 .contact-info a:hover {
     color: var(--light-gray);
 }
-
-.resume {
-    background: var(--dark-gray);
-}

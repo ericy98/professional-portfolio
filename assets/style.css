@@ -27,14 +27,15 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  position: sticky;
-        top: 0;
-        z-index: 1;
+    /* 
+    position: sticky;
+    top: 0;
+    z-index: 1;
        
-        /* safari sticky */
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;  
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;   */
+    
 }
 
 header h1 {
@@ -173,12 +174,13 @@ header nav ul li a {
     background-size: cover;
     display:flex;
     flex-direction: column; 
-    justify-content: flex-end;
+    justify-content: flex-end; 
 }
 
 .grid-item.led {
     background-image: url("../assets/images/led.jpg");
     background-size: cover;
+    
 }
 
 .grid-item.calc {
@@ -194,4 +196,15 @@ header nav ul li a {
 .grid-item.run {
     background-image: url("../assets/images/run.JPG");
     background-size: cover;
+}
+
+.name {
+    background: #91939E;
+    width: 50%;
+    height: 120px;
+}
+
+.name2 {
+    background-color: #91939E;
+    padding: 0 20px 0 5px
 }

@@ -1,18 +1,23 @@
 /* possible colors analogous
-#BF9E97
-#AFA3C9
-#99B2AC
-#C9C9A3
-#BFA79B
+--gold: #BFBAE0;
+    --blue:#8288B8;
+    --black:#25253D; 
+    --green: #91939E;
+    --coral: #919CEB;
+    --white: #2F3033;
 */
 
 :root {
-    --light-purple: #BFBAE0;
-    --purple:#8288B8;
-    --dark-purple:#25253D; 
-    --light-gray: #91939E;
-    --periwinkleish: #919CEB;
-    --dark-gray: #2F3033;
+    --gold: #F5AC09;
+    --blue: #0A5159;
+    --black:#0f0f0f; 
+    --green: #038C65;
+    --coral: #BF4226;
+    --white: #F0f0f0;
+}
+
+::selection {
+    background-color: var(--gold);
 }
 
 * {
@@ -26,7 +31,7 @@ body{
 
 /* start header style */
 header {
-    background-color: var(--dark-gray);
+    background-color: var(--blue);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -44,10 +49,10 @@ header {
 
 header h1 {
    font-size: 40px;
-   background-color: var(--purple);
-   color: var(--dark-gray);
-   padding: 15px 15px;
+   color:var(--white);
+   padding: 10px 10px;
    margin: 20px 20px;
+   border-radius: 15px;
 }
 
 header nav ul {
@@ -60,15 +65,16 @@ header nav ul {
 header nav ul li a {
     margin: 15px 15px;
     font-weight: lighter;
-    color: var(--purple);
+    color: var(--white);
+    border-radius: 15px;
     font-size: 1.75vw;
-    transition: 1s;
+    transition: 0.2s;
 
 }
 
 header nav ul li a:hover {
-    background: var(--purple);
-    color: var(--dark-gray);
+    background: var(--gold);
+    color: var(--black);
     padding: 5px;
 }
 
@@ -89,7 +95,7 @@ header nav ul li a:hover {
 .hero h2 {
     font-style: italic;
     font-size: 25px;
-    color: var(--dark-purple);
+    color: var(--white);
 }
 
 .hero h2 div {
@@ -100,27 +106,31 @@ header nav ul li a:hover {
 /* section-title style */
 .section-title-first{
     font-size: 40px;
-    color: var(--dark-gray);
-    border-right:3px solid #fff;
+    color: var(--white);
+    border-right: 2px solid var(--white);
     padding: 10px 25px;
     text-align: end;
 }
 
 .section-title-second {
     font-size: 40px;
-    color: #919CEB;
+    color: var(--coral);
     padding: 10px 20px;
 }
 
 /* start about me style */
 .about {
-    background-color: var(--purple) ;
-    color: var(--dark-gray);
+    background-color: var(--green) ;
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
     
+}
+
+.about h2 {
+    padding: 0 35px 0 95px;
 }
 
 .about p {
@@ -137,13 +147,13 @@ header nav ul li a:hover {
 /* start work style */
 .work {
     padding: 20px 20px;
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     display: flex;
 }
 
 .work h2 {
-    border-right:3px solid #fff;
-    padding: 0 35px;
+    border-right:3px solid var(--coral);
+    padding: 0 35px 0 110px;
     
 }
 
@@ -161,12 +171,12 @@ header nav ul li a:hover {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
     font-size: 1.1rem;
-    color: var(--dark-purple);
+    color: var(--black);
 }
 
 .grid-item {
-    border: 2px solid black;
-    background: var(--light-gray);
+    border: 2px solid var(--coral);
+    background: var(--coral);
     padding: 30px;
     position: relative;
 }
@@ -242,16 +252,16 @@ header nav ul li a:hover {
 }
 
 .name {
-    background: var(--light-gray);
-    opacity: 80%;
+    background: var(--coral);
+    opacity: 75%;
     width: 50%;
     height: 120px;
     padding: 0 0 0 5px;
 }
 
 .name2 {
-    background:var(--light-gray);
-    opacity: 80%;
+    background:var(--coral);
+    opacity: 75%;
     display: flex;
     flex-direction: column;
     line-height: 0vw;
@@ -260,7 +270,7 @@ header nav ul li a:hover {
 
 .grid-item a {
     text-decoration: none;
-    color: black;
+    color: var(--white);
 }
 
 
@@ -268,32 +278,31 @@ header nav ul li a:hover {
 
 /* start contact me style */
 .contact-me {
-    background-color: var(--purple);
+    background-color: var(--blue);
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
     text-decoration: none;
+    padding: 20px 0 20px 0;
 }
 
 .contact-me h2 {
     margin-right: auto;
-    padding: 0 20px;
-}   
 
-
+}
 .contact-info a {
     font-weight: bolder ;
     margin-right: 7vw;
     margin-left: 7vw;
-    color: var(--dark-gray);
+    color: var(--white);
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #fff;
 } 
 
 .contact-info a:hover {
-    background-color: var(--light-gray);
-    color: var(--dark-purple);
+    background-color: var(--gold);
+    color: var(--black);
     padding: 10px;
 }
 /* end contact style */
@@ -352,7 +361,7 @@ header nav ul li a:hover {
     .work h2{
         font-size: 35px;
         border-right: none;
-        border-bottom:3px solid #fff;
+        border-bottom:3px solid var(--black);
         padding: 10px 25px;
         text-align: center;
         width: 100%;

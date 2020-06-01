@@ -269,7 +269,7 @@ header nav ul li a:hover {
 /* start contact me style */
 .contact-me {
     background-color: var(--purple);
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center; 
     text-decoration: none;
@@ -278,12 +278,13 @@ header nav ul li a:hover {
 .contact-me h2 {
     margin-right: auto;
     padding: 0 20px;
-}    
+}   
+
 
 .contact-info a {
     font-weight: bolder ;
-    margin-right: 8vw;
-    margin-left: 8vw;
+    margin-right: 7vw;
+    margin-left: 7vw;
     color: var(--dark-gray);
     text-decoration: underline;
     text-underline-position: under;
@@ -298,6 +299,12 @@ header nav ul li a:hover {
 /* end contact style */
 
 /* start mediaqueries style */
+@media screen and (max-width: 575px) {
+
+    header nav ul {
+        padding: 0 20px 0 20px;
+    }
+}
 
 @media screen and (max-width: 980px) {
     
@@ -315,7 +322,7 @@ header nav ul li a:hover {
     header nav ul {
         margin-top: 20px;
         width: 100%;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     header nav ul li a {
@@ -324,9 +331,15 @@ header nav ul li a:hover {
         padding: 10px 15px;
     }
 
+    header nav ul li a:hover {
+        background-color: none;
+        padding: 0;
+    }
+    
     .hero{
         text-align: center;
     }
+
     .section-title-first {
         font-size: 35px;
         border-right: none;
@@ -414,4 +427,7 @@ header nav ul li a:hover {
         align-items: center;
         line-height: 10vw;
     } 
+    .contact-info a:hover {
+        background: none;
+        padding: 0;
 } 

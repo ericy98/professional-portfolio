@@ -120,7 +120,7 @@ header nav ul li a:hover {
 
 /* start about me style */
 .about {
-    background-color: var(--green) ;
+    background-color: var(--blue) ;
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -185,10 +185,10 @@ header nav ul li a:hover {
     font-size: 1.8rem;
 }
 
-.grid-item.run {
+.grid-item.worth {
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
-    background-image: url("../assets/images/run.JPG");
+    background-image: url("../assets/images/WMT.png");
     background-size: cover;
     opacity: 40%;
     transition: all 1s;
@@ -197,20 +197,20 @@ header nav ul li a:hover {
     justify-content: flex-end; 
 }
 
-.grid-item.run:hover {
+.grid-item.worth:hover {
     opacity: 1;
     transform: scale(1.05);
 }
 
-.grid-item.led {
-   background-image: url("../assets/images/led.jpg");
+.grid-item.run {
+   background-image: url("../assets/images/run.jpg");
     background-size: contain;
     opacity: 40%;
     transition: all 1s;
     
 }
 
-.grid-item.led:hover {
+.grid-item.run:hover {
     opacity: 1;
     transform: scale(1.1);
 }
@@ -390,7 +390,7 @@ header nav ul li a:hover {
     font-size: 1.1rem;
     }
 
-    .grid-item.run {
+    .grid-item.worth {
         grid-column: span 1;
         grid-row: span 1;
         color: #fff; 
@@ -403,7 +403,7 @@ header nav ul li a:hover {
     }
 
     .grid-item.run, 
-    .grid-item.led, 
+    .grid-item.worth, 
     .grid-item.calc, 
     .grid-item.pastel, 
     .grid-item.surf {
@@ -412,7 +412,7 @@ header nav ul li a:hover {
     }
 
     .grid-item.run:hover,
-    .grid-item.led:hover,
+    .grid-item.worth:hover,
     .grid-item.calc:hover,
     .grid-item.pastel:hover,
     .grid-item.surf:hover {

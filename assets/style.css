@@ -1,18 +1,12 @@
-/* possible colors analogous
---gold: #BFBAE0;
-    --blue:#8288B8;
-    --black:#25253D; 
-    --green: #91939E;
-    --coral: #919CEB;
-    --white: #2F3033;
-*/
+
 
 :root {
-    --gold: #F5AC09;
+    --gold: #F2BE22;
     --blue: #0A5159;
-    --black:#0f0f0f; 
+    --black:#0f0f0f;
+    --purple: #511F73; 
     --green: #038C65;
-    --coral: #BF4226;
+    --coral: #F24C3D;
     --white: #F0f0f0;
 }
 
@@ -106,8 +100,8 @@ header nav ul li a:hover {
 /* section-title style */
 .section-title-first{
     font-size: 40px;
-    color: var(--white);
-    border-right: 2px solid var(--white);
+    color: var(--blue);
+    border-right: 2px solid var(--blue);
     padding: 10px 25px;
     text-align: end;
 }
@@ -120,8 +114,8 @@ header nav ul li a:hover {
 
 /* start about me style */
 .about {
-    background-color: var(--blue) ;
-    color: var(--white);
+    background-color: var(--white) ;
+    color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,15 +196,15 @@ header nav ul li a:hover {
     transform: scale(1.05);
 }
 
-.grid-item.run {
-   background-image: url("../assets/images/run.jpg");
+.grid-item.ill {
+   background-image: url("../assets/images/illbehonest.png");
     background-size: contain;
     opacity: 40%;
     transition: all 1s;
     
 }
 
-.grid-item.run:hover {
+.grid-item.ill.hover {
     opacity: 1;
     transform: scale(1.1);
 }
@@ -278,7 +272,7 @@ header nav ul li a:hover {
 
 /* start contact me style */
 .contact-me {
-    background-color: var(--blue);
+    background-color: var(--white);
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
@@ -294,10 +288,10 @@ header nav ul li a:hover {
     font-weight: bolder ;
     margin-right: 7vw;
     margin-left: 7vw;
-    color: var(--white);
+    color: var(--blue);
     text-decoration: underline;
     text-underline-position: under;
-    text-decoration-color: #fff;
+    text-decoration-color: var(--white);
 } 
 
 .contact-info a:hover {
@@ -352,7 +346,7 @@ header nav ul li a:hover {
     .section-title-first {
         font-size: 35px;
         border-right: none;
-        border-bottom:3px solid #fff;
+        border-bottom:3px solid var(--blue);
         padding: 10px 25px;
         text-align: center;
         width: 100%;
@@ -361,7 +355,7 @@ header nav ul li a:hover {
     .work h2{
         font-size: 35px;
         border-right: none;
-        border-bottom:3px solid var(--black);
+        border-bottom:3px solid var(--coral);
         padding: 10px 25px;
         text-align: center;
         width: 100%;
@@ -402,7 +396,7 @@ header nav ul li a:hover {
         padding: 10px 15px;
     }
 
-    .grid-item.run, 
+    .grid-item.ill, 
     .grid-item.worth, 
     .grid-item.calc, 
     .grid-item.pastel, 
@@ -411,7 +405,7 @@ header nav ul li a:hover {
         transition: none;
     }
 
-    .grid-item.run:hover,
+    .grid-item.ill:hover,
     .grid-item.worth:hover,
     .grid-item.calc:hover,
     .grid-item.pastel:hover,
